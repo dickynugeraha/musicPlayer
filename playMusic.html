@@ -1,0 +1,48 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Play Music</title>
+  <link rel="stylesheet" href="../sources/css/font.awesome.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="player">
+    <div class="track-img">
+    </div>
+    <div class="display">
+
+      <div class="title">
+        <h5 id="trackName">Girls like you</h5>
+        <h2 id="trackArtist">Maroon 5</h3>
+      </div>
+
+      <div class="slider-container">
+        <div class="current-time">00:00</div>
+        <input type="range" name="" id="" min="1" max="100" value="0" class="seek-slider" disabled onchange="seekTo()">
+        <div class="total-duration">00:00</div>
+      </div>
+
+      <div class="buttons">
+        <div class="prev-track">
+          <i class="fa fa-step-backward fa-3x" onclick="prevTrack()"></i>
+        </div>
+        <div class="playpauseTrack">
+          <i class="fa fa-play-circle fa-3x" onclick="playpauseTrack()"></i>
+        </div>
+        <div class="next-track">
+          <i class="fa fa-step-forward fa-3x" onclick="nextTrack()"></i>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <script src="../sources/js/font.awesome.js"></script>
+  <script src="appMusic.js"></script>
+</body>
+
+</html>
